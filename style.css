@@ -1,0 +1,70 @@
+body
+{
+    margin:0;
+    padding:0;
+    font-size: 1em;
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    background-image:url(https://img.freepik.com/free-vector/bons-foot-prints-pattern-background_1374-18.jpg?size=338&ext=jpg);
+
+    
+}
+p
+{
+    margin-bottom: 0;
+}
+
+#container
+{
+    height: 100%;
+    display:grid;
+    grid-template-columns: repeat(6,minmax(20px,1fr));
+    grid-template-rows: 1fr 2fr 50px;
+    grid-template-areas: 
+    "..... ....... header header ...... ......." 
+    "..... form form   form form ......."
+    "footer footer footer footer footer footer";
+}
+#header
+{
+    grid-area: header;
+    justify-self: center;
+}
+#title
+{
+    margin: 20px 0px 10px;
+    font-size: 5em;
+}
+/* Background of the survey block */
+#survey
+{
+    height: 100%;
+    background-color: rgba(27, 27, 50, 0.8) ;
+    margin: 0 15em;
+    padding: 0 5em;
+    border: 1px rgba(27, 27, 50, 0.8) ;
+    border-radius: 5%;
+    grid-area: form;
+}
+/*Putting the survey in column mode*/
+#survey-form
+{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+/*Adjusting mini blocks of each field*/
+.survey-group
+{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1em 0;;
+}
+.form-control
+{
+    height: 2em;
+}
+label span
+{
+    font-size: 0.9em;
+}

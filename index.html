@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main id="container">
+        <header id="header">
+            <h1 id="title">Doge Survey</h1>
+            <p id="description">Thank you for sharing with us about your favorite family member</p>
+        </header>
+        <!--Survey block-->
+        <div id="survey">
+            <form id="survey-form" action="#">
+                <!--initial block of the field (same for every field)-->
+                <div class="survey-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your Name" required>
+                </div>
+                <!--end of the block-->
+                <div class="survey-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+                </div>
+                <div class="survey-group">
+                    <label id="dog-name-label" for="dog-name">Dog Name</label>
+                    <input type="text" name="dog-name" id="dog-name" class="form-control" placeholder="Enter your Dog's Name" required>
+                </div>
+                <div class="survey-group">
+                    <label id="number-label" for="number">Age <span>(optional)</span></label>
+                    <input type="number" name="age" id="number" class="form-control" placeholder="Enter your Dog's age" min="0" max="15">
+                </div>
+                <div class="survey-group">
+                    <p>Which breed describes more your dog?</p>
+                    <select name="breed" id="dropdown" class="form-control" required>
+                        <option disabled selected value>Select your dog's breed</option>
+                        <option value="Beagle">Beagle</option>
+                        <option value="Bulldog">Bulldog</option>
+                        <option value="Chihuahua">Chihuahua</option>
+                        <option value=""></option>
+                      
+                    </select>
+                </div>
+            </form>
+        </div>
+        </main>
+    </body>
+</html>
