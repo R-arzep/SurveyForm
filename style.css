@@ -2,7 +2,7 @@ body
 {
     margin:0;
     padding:0;
-    font-size: 1em;
+    font-size: 15px;
     color: #fff;
     font-family: 'Pacifico', cursive;
     background-image:url(https://img.freepik.com/free-vector/bons-foot-prints-pattern-background_1374-18.jpg?size=338&ext=jpg);
@@ -19,7 +19,7 @@ p
     height: 100%;
     display:grid;
     grid-template-columns: repeat(6,minmax(20px,1fr));
-    grid-template-rows: 1fr 2fr 50px;
+    grid-template-rows: 15em 2fr 50px;
     grid-template-areas: 
     "..... ....... header header ...... ......." 
     "..... form form   form form ......."
@@ -52,13 +52,15 @@ p
     display: flex;
     flex-flow: column wrap;
     width: 100%;
+    justify-content: center;
 }
 /*Adjusting mini blocks of each field*/
 .survey-group
 {
     display: flex;
     flex-flow: column wrap;
-    padding: 1em 0;;
+    padding: 1em 0em 0em;;
+
 }
 .form-control
 {
@@ -67,4 +69,22 @@ p
 label span
 {
     font-size: 0.9em;
+}
+#comment
+{
+    resize: vertical;
+    width: 100%;
+    min-height: 10em;
+    padding: 5px;
+    margin-top: 1em;
+}
+#submit
+{
+    height: 4em;
+    color: #fff;
+    font-size: 1em;
+    background-color: #47cf73;
+    border: 1px #2b8147 solid;
+    border-radius: 5px;
+    margin-bottom: 2em;
 }
